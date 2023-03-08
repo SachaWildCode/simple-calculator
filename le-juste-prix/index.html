@@ -7,11 +7,25 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
 </head>
 
 <body>
-
+    <script>
+        const rightPrice = Math.floor(Math.random() * 100) + 1
+        console.log(rightPrice);
+        const name = prompt("Quel est ton nom ?");
+        let yourPrice = parseInt(prompt("Quel est le juste prix ?"));
+        while (yourPrice !== rightPrice) {
+            if (yourPrice < rightPrice) {
+                let yourPrice = parseInt(prompt("Quel est le juste prix ?"));
+            } else if (yourPrice > rightPrice) {
+                let yourPrice = parseInt(prompt("Quel est le juste prix ?"));
+            } else {
+                let yourPrice = parseInt(prompt("Quel est le juste prix ?"));
+            }
+        }
+        alert("Bravo vous avez gagné");
+    </script>
 </body>
 
 </html>
