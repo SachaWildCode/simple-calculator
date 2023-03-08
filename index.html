@@ -12,10 +12,24 @@
 
 <body>
     <script>
-        console.log("Hello World")
-        let firstValue = 1;
-        let operator = "+";
-        let secondValue = 2;
+        let firstValue = parseInt(prompt("firstvalue"));
+        let operator = prompt("operator");
+        let secondValue = parseInt(prompt("secondvalue"))
+        switch (operator) {
+            case "+":
+                console.log(firstValue + secondValue);
+                break;
+            case "-":
+                console.log(firstValue - secondValue);
+                break;
+            case "*":
+                console.log(firstValue * secondValue);
+                break;
+            case "/":
+                console.log(firstValue / secondValue);
+                break;
+        }
+
     </script>
 </body>
 
